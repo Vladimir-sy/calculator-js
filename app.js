@@ -17,10 +17,11 @@
         if (screen.value === "") {
             screen.value = "Please Enter a Value";
         } else {
+            confirm("Вы действительно хотите посчитать результат!");
             let answer = eval(screen.value);
             screen.value = answer;
         }
-        equal.onclick = new Audio("music/tatar_dreamed_of.mp3").play();
+        // equal.onclick = new Audio("music/tatar_dreamed_of.mp3").play();
     });
 
     clear.addEventListener("click", function (e) {
